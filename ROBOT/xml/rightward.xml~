@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<leftward>
+   <move id="1">
+     <position> #1P1500#2P2100#3P1611#4P1211#5P1500#6P1300#7P700#8P1500#17P1500#18P2300#19P1700#20P1500#21P1811#22P1389#23P900#24P1500
+     </position>
+     <time>500</time>
+   </move>
+   <move id="2">
+     <position>#1P1700#5P1300#6P1500#7P1011#18P2011#19P1500#20P1344#24P1656 
+     </position>
+     <time>500</time>
+   </move>
+   <move id="3">
+     <position>#2P2411#3P1300 
+     </position>
+     <time>500</time>
+   </move>
+   <move id="4">
+     <position>#1P1811#2P2011#3P1744#4P1256#5P1189 
+     </position>
+     <time>500</time>
+   </move>
+   <move id="5">
+     <position>#1P1344#2P2100#3P1589#4P1211#5P1656#20P1811#21P1744#22P1256#23P1011#24P1211 
+     </position>
+     <time>500</time>
+   </move>
+   <move id="6">
+     <position>#21P1811#22P1700#23P611 
+     </position>
+     <time>500</time>
+   </move>
+   <move id="7">
+     <position>#20P1700#22P1411#23P900#24P1300 
+     </position>
+     <time>500</time>
+   </move>
+</leftward>

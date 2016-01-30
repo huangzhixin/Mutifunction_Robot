@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<turnleft>
+   <move id="1">
+     <position>#1P1500#2P1700#3P2300#4P1500#5P1500#6P1300#7P700#8P1500#17P1500#18P2300#19P1700#20P1500#21P1500#22P700#23P1300#24P1500 
+     </position>
+     <time>500</time>
+   </move>
+   <move id="2">
+     <position>#1P1567#2P1567#4P1344#5P1433#8P1300#17P1278#20P1567#21P1344#23P1144#24P1433 
+     </position>
+     <time>500</time>
+   </move>

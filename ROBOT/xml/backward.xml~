@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<backward>
+   <move id="1">
+     <position>#1P1500#2P2100#3P1611#4P1211#5P1500#6P1600#7P700#8P1500#17P1500#18P2300#19P1500#20P1500#21P1789#22P1389#23P900#24P1500   
+     </position>
+     <time>500</time>
+   </move>
+   <move id="2">
+     <position>#1P1344#5P1656#20P1700#24P1300   
+     </position>
+     <time>500</time>
+   </move>
+   <move id="3">
+     <position>#20P1744#21P2011#22P1811#23P700#24P1256  
+     </position>
+     <time>500</time>
+   </move>
+   <move id="4">   <!-- 循环移动的动作-->
+     <position>#2P1989#3P1811#8P1189#17P1211#21P1500#22P1300#23P611
+     </position>
+     <time>500</time>
+   </move>
+   <move id="5">
+     <position>#1P1500#4P1300#5P1500#20P1500#21P1300#22P789#23P1011#24P1500
+     </position>
+     <time>500</time>
+   </move>
+   <move id="6">
+     <position>#1P1744#2P1900#3P1700#4P1100#5P1256#20P1344#21P1811#22P1300#24P1656
+     </position>
+     <time>500</time>
+   </move>
+   <move id="7">
+     <position>#2P2011#3P1211#4P811
+     </position>
+     <time>500</time>
+   </move>
+   <move id="8">
+     <position>#2P2411#3P1700#4P1500#8P1811#17P1811#22P1211
+     </position>
+     <time>500</time>
+   </move>
+   <move id="9">
+     <position>#1P1500#2P2011#3P2211#4P1700#5P1500#20P1500#24P1500
+     </position>
+     <time>500</time>
+   </move>
+   <move id="10">
+     <position>#1P1344#3P1700#4P1211#5P1656#8P1500#17P1500#20P1767#21P1900#22P1300#23P1100#24P1256
+     </position>
+     <time>500</time>
+   </move>
+   <move id="11">   <!-- 循环移动的动作-->
+     <position>#21P2211#22P1611
+     </position>
+     <time>500</time>
+   </move>
+   <move id="12">
+     <position>#1P1500#2P2100#3P1611#4P1211#5P1500#6P1600#7P700#8P1500#17P1500#18P2300#19P1500#20P1500#21P1789#22P1389#23P900#24P1500   
+     </position>
+     <time>500</time>
+   </move>
+   <move id="12">
+     <position>#1P1500#2P1700#3P2300#4P1500#21P1500#22P700#23P1300#24P1500
+     </position>
+     <time>500</time>
+   </move>
+</backward>

@@ -1,0 +1,5 @@
+def Movement(a,c,v,d,g):
+    print a,c,v,d,g
+if __name__ == "__main__":
+  ss=[1,2,3,4,5]
+  Movment(ss)

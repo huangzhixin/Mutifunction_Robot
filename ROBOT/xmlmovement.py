@@ -1,0 +1,199 @@
+#coding=utf-8
+#!/usr/bin/python
+
+from xml.dom.minidom import parse
+import xml.dom.minidom
+class XmlMovement:
+  def __init__(self,movement):
+     # 使用minidom解析器打开 XML 文档
+     self.DOMTree = xml.dom.minidom.parse("./xml/"+movement+".xml")
+     self.collection = self.DOMTree.documentElement
+     self.moves = self.collection.getElementsByTagName("move")
+  def getmovement(self,num):
+     if(len(self.moves)>num):
+      position = self.moves[num].getElementsByTagName('position')[0]
+      string=position.childNodes[0].data
+      timetree=self.moves[num].getElementsByTagName('time')[0]
+      time=timetree.childNodes[0].data
+      #print time
+      #print type(time)
+      LL1V=""
+      LL2V=""
+      LL3V=""
+      LL4V=""
+      LL5V=""
+      LR1V=""
+      LR2V=""
+      LR3V=""
+      LR4V=""
+      LR5V=""
+      AL1V=""
+      AL2V=""
+      AL3V=""
+      AR1V=""
+      AR2V=""
+      AR3V=""
+      if(string.find("#5P")!=-1):
+       for i in range(string.find("#5P")+3,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          LL1V+=string[i]
+        else:
+          break
+      if(string.find("#4P")!=-1):
+       for i in range(string.find("#4P")+3,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          LL2V+=string[i]
+        else:
+          break
+      if(string.find("#3P")!=-1):
+       for i in range(string.find("#3P")+3,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          LL3V+=string[i]
+        else:
+          break
+      if(string.find("#2P")!=-1):
+       for i in range(string.find("#2P")+3,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          LL4V+=string[i]
+        else:
+          break
+      if(string.find("#1P")!=-1):
+       for i in range(string.find("#1P")+3,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          LL5V+=string[i]
+        else:
+          break
+      if(string.find("#20P")!=-1):
+       for i in range(string.find("#20P")+4,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          LR1V+=string[i]
+        else:
+          break
+      if(string.find("#21P")!=-1):
+       for i in range(string.find("#21P")+4,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          LR2V+=string[i]
+        else:
+          break
+      if(string.find("#22P")!=-1): 
+       for i in range(string.find("#22P")+4,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          LR3V+=string[i]
+        else:
+          break
+      if(string.find("#23P")!=-1):
+       for i in range(string.find("#23P")+4,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          LR4V+=string[i]
+        else:
+          break
+      if(string.find("#24P")!=-1):
+       for i in range(string.find("#24P")+4,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          LR5V+=string[i]
+        else:
+          break
+      if(string.find("#8P")!=-1):
+       for i in range(string.find("#8P")+3,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          AL1V+=string[i]
+        else:
+          break
+      if(string.find("#7P")!=-1):
+       for i in range(string.find("#7P")+3,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          AL2V+=string[i]
+        else:
+          break
+      if(string.find("#6P")!=-1):
+       for i in range(string.find("#6P")+3,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          AL3V+=string[i]
+        else:
+          break
+      if(string.find("#17P")!=-1):
+       for i in range(string.find("#17P")+4,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          AR1V+=string[i]
+        else:
+          break
+      if(string.find("#18P")!=-1):
+       for i in range(string.find("#18P")+4,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          AR2V+=string[i]
+        else:
+          break
+      if(string.find("#19P")!=-1):
+       for i in range(string.find("#19P")+4,len(string)):
+        if(string[i].isdigit()):
+          #print string[i]  
+          AR3V+=string[i]
+        else:
+          break
+      if(LL1V==""):
+         LL1V="0"
+      if(LL2V==""):
+         LL2V="0"
+      if(LL3V==""):
+         LL3V="0"
+      if(LL4V==""):
+         LL4V="0"
+      if(LL5V==""):
+         LL5V="0"
+      if(LR1V==""):
+         LR1V="0"
+      if(LR2V==""):
+         LR2V="0"
+      if(LR3V==""):
+         LR3V="0"
+      if(LR4V==""):
+         LR4V="0"
+      if(LR5V==""):
+          LR5V="0"
+      if(AL1V==""):
+         AL1V="0"
+      if(AL2V==""):
+         AL2V="0"
+      if(AL3V==""):
+         AL3V="0"
+      if(AR1V==""):
+         AR1V="0"
+      if(AR2V==""):
+         AR2V="0"
+      if(AR3V==""):
+         AR3V="0"
+      LL=[int(LL1V),int(LL2V),int(LL3V),int(LL4V),int(LL5V)]
+      LR=[int(LR1V),int(LR2V),int(LR3V),int(LR4V),int(LR5V)]
+      AL=[int(AL1V),int(AL2V),int(AL3V)]
+      AR=[int(AR1V),int(AR2V),int(AR3V)]
+      T=int(time)
+      body=[LL,LR,AL,AR,T]
+      return body
+  def display(self):
+     for move in self.moves:
+        print "*****Move*****"
+        print "ID: %s" % move.getAttribute("id")
+        position = move.getElementsByTagName('position')[0]
+        print "position: %s" % position.childNodes[0].data
+
+if __name__ == "__main__":
+     huang=XmlMovement("forward")
+     #huang.display()
+     #for i in range(0,len(huang.moves)):
+     sb=huang.getmovement(11)
+     print sb
